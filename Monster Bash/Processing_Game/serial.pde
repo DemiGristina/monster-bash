@@ -81,6 +81,12 @@ void serialEvent (Serial myPort) {
 
       if (sensor4>5) {
         println("Knock4");
+        
+        hx=width-(width/4);
+        hy=height-(height/4);
+        hit3=true;
+      } else {
+        hit3=false;
       }
     }
   }
